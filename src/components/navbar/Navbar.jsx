@@ -16,7 +16,7 @@ const pages = (
       to={`/`}
       className={({ isActive, isPending }) =>
         isActive
-          ? "active text-[#fb8500] border-b-2 border-[#fb8500] pb-1"
+          ? "active text-[#E6B31e] border-b-2 border-[#E6B31e] pb-1"
           : isPending
           ? "pending"
           : ""
@@ -25,7 +25,7 @@ const pages = (
       Home
     </NavLink>
     <NavLink
-      to={`/products`}
+      to={`/about`}
       className={({ isActive, isPending }) =>
         isActive
           ? "active text-[#fb8500] border-b-2 border-[#fb8500] pb-1"
@@ -34,7 +34,43 @@ const pages = (
           : ""
       }
     >
-      Products
+      About
+    </NavLink>
+    <NavLink
+      to={`/portfolio`}
+      className={({ isActive, isPending }) =>
+        isActive
+          ? "active text-[#fb8500] border-b-2 border-[#fb8500] pb-1"
+          : isPending
+          ? "pending"
+          : ""
+      }
+    >
+      Portfolio
+    </NavLink>
+    <NavLink
+      to={`/news`}
+      className={({ isActive, isPending }) =>
+        isActive
+          ? "active text-[#E6B31e] border-b-2 border-[#E6B31e] pb-1"
+          : isPending
+          ? "pending"
+          : ""
+      }
+    >
+      News
+    </NavLink>
+    <NavLink
+      to={`/contact`}
+      className={({ isActive, isPending }) =>
+        isActive
+          ? "active text-[#fb8500] border-b-2 border-[#fb8500] pb-1"
+          : isPending
+          ? "pending"
+          : ""
+      }
+    >
+      Contact
     </NavLink>
   </>
 );
@@ -131,7 +167,7 @@ function Navbar() {
             ></Grid>
             <Grid sx={{ display: "flex" }}>
               <Grid item>
-                <Typography
+                {/* <Typography
                   variant="h4"
                   noWrap
                   fontSize={{ sx: "16px" }}
@@ -142,8 +178,8 @@ function Navbar() {
                     textDecoration: "none",
                   }}
                 >
-                  Tech
-                </Typography>
+                  Sakib
+                </Typography> */}
               </Grid>
               <Grid item>
                 <Typography
@@ -157,7 +193,7 @@ function Navbar() {
                     textDecoration: "none",
                   }}
                 >
-                  Store
+                  Sakib Al Hasan
                 </Typography>
               </Grid>
             </Grid>
