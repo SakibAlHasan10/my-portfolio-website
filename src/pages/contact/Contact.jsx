@@ -6,16 +6,16 @@ import { MdOutlineLocationOn } from "react-icons/md";
 const Contact = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-3">
+      <div className="grid md:grid-cols-3 pb-32">
         <div className="text-white">
-          <h3 className="uppercase text-xl font-semibold">Contact Info</h3>
+          <h3 className="uppercase text-lg font-semibold">Contact Info</h3>
           <div className="flex gap-6 items-center mt-8 ">
             <div className="w-20 h-20 bg-gradient-to-r from-[#2A2A2A] to-[#151515] flex items-center justify-center text-3xl rounded-lg">
               <MdMailOutline/>
             </div>
             <div>
-              <h4>MAIL US</h4>
-              <h4>sakibalhasan.me1@mail.com</h4>
+              <h4 className="text-[#595858] font-semibold text-lg">MAIL US</h4>
+              <h4 className="text-[#e1e0e0] mt-1">sakibalhasan.me1@mail.com</h4>
             </div>
           </div>
           <div className="flex gap-6 items-center mt-14 ">
@@ -24,6 +24,8 @@ const Contact = () => {
             <LuPhone/>
             </div>
             <div>
+                <div className="text-[#595858] font-semibold text-lg">CONTACT US</div>
+              <h4 className="text-[#e1e0e0] mt-1">+880 1961629262</h4>
 
             </div>
           </div>
@@ -32,10 +34,14 @@ const Contact = () => {
 
             <MdOutlineLocationOn/>
             </div>
-            <div></div>
+            <div >
+            <h4 className="text-[#595858] font-semibold text-lg">LOCATION</h4>
+            <h4 className="text-[#e1e0e0] mt-1">Dhaka, Bangladesh</h4>
+            </div>
+
           </div>
-          <div className="">
-            <h2 className="uppercase text-xl font-semibold">Social info</h2>
+          <div className="mt-12">
+            <h2 className="uppercase text-lg font-semibold">Social info</h2>
             <div className="flex mt-8 justify-start gap-6 items-center">
               <button className="w-20 h-20 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] rounded-full hover:text-black hover:bg-gradient-to-r hover:from-[#fff] hover:to-[#1A1A1A] flex items-center justify-center text-3xl">
                 <FaFacebookF />
