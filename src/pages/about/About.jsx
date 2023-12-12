@@ -98,7 +98,7 @@ const About = () => {
             </button>
           </div>
         </div>
-        <NavLink className="col-span-2 bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl px-8 pb-8">
+        <NavLink to={"/contact"} className="col-span-2 bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl px-8 pb-8">
           <img
             src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
             alt=""
