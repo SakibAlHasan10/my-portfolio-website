@@ -136,7 +136,7 @@ const About = () => {
           </span>
         </NavLink>
         <NavLink
-          to={"/contact"}
+          to={"/credentials"}
           className="bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl p-8"
         >
           <img
@@ -145,7 +145,7 @@ const About = () => {
           />
           <div>
             <span className="text-[#595858] uppercase flex justify-start font-semibold text-md mt-2">
-              ORE about me
+              MORE about me
             </span>
             <span className="flex justify-between items-end">
               <h4 className="text-white text-xl font-semibold">Credentials</h4>
