@@ -54,8 +54,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="p-8 md:p-12 bg-gradient-to-r from-[#202020] to-[#151515] col-span-2 rounded-3xl">
-          <h2 className="text-4xl font-bold text-white">
-            Let&quot;s work together.
+          <h2 className="text-5xl font-bold text-white">
+            Let&apos;s work <span className="text-[#E6B31e]">together.</span>
           </h2>
           <form>
             <input
@@ -92,7 +92,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-[#343333] text-white hover:bg-[#626161] hover:text-black h-14 rounded-xl mt-4 w-full"
+              className="bg-[#343333] text-white hover:bg-[#fff] hover:text-black h-14 rounded-xl mt-4 w-full"
             >
               Send Message
             </button>

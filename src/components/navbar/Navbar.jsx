@@ -19,7 +19,7 @@ const pages = (
           ? "active text-[#E6B31e] border-b-2 border-[#E6B31e] pb-1"
           : isPending
           ? "pending"
-          : ""
+          : "hover:text-[#E6B31e]"
       }
     >
       Home
@@ -28,10 +28,10 @@ const pages = (
       to={`/about`}
       className={({ isActive, isPending }) =>
         isActive
-          ? "active text-[#fb8500] border-b-2 border-[#fb8500] pb-1"
+          ? "active text-[#E6B31e] border-b-2 border-[#E6B31e] pb-1"
           : isPending
           ? "pending"
-          : ""
+          : "hover:text-[#E6B31e]"
       }
     >
       About
@@ -40,15 +40,15 @@ const pages = (
       to={`/portfolio`}
       className={({ isActive, isPending }) =>
         isActive
-          ? "active text-[#fb8500] border-b-2 border-[#fb8500] pb-1"
+          ? "active text-[#E6B31e] border-b-2 border-[#E6B31e] pb-1"
           : isPending
           ? "pending"
-          : ""
+          : "hover:text-[#E6B31e]"
       }
     >
       Portfolio
     </NavLink>
-    <NavLink
+    {/* <NavLink
       to={`/news`}
       className={({ isActive, isPending }) =>
         isActive
@@ -59,15 +59,15 @@ const pages = (
       }
     >
       News
-    </NavLink>
+    </NavLink> */}
     <NavLink
       to={`/contact`}
       className={({ isActive, isPending }) =>
         isActive
-          ? "active text-[#fb8500] border-b-2 border-[#fb8500] pb-1"
+          ? "active text-[#E6B31e] border-b-2 border-[#E6B31e] pb-1"
           : isPending
           ? "pending"
-          : ""
+          : "hover:text-[#E6B31e]"
       }
     >
       Contact
@@ -100,9 +100,9 @@ function Navbar() {
       sx={{
         pt: "8px",
         height: "80px",
-        bgcolor: `${colorChange ? "#023047" : "#fff0"}`,
+        bgcolor: `${colorChange ? "#202020" : "#fff0"}`,
         boxShadow: "none",
-        color: "#023047",
+        color: "#202020",
       }}
     >
       <Container maxWidth="lg">
@@ -143,7 +143,7 @@ function Navbar() {
                   display={"flex"}
                   flexDirection={"column"}
                   gap={"25px"}
-                  sx={{ color: "#023047" }}
+                  sx={{ color: "#202020" }}
                   textAlign="center"
                 >
                   {pages}
@@ -174,7 +174,7 @@ function Navbar() {
                   sx={{
                     fontFamily: "monospace",
                     fontWeight: 800,
-                    color: `${colorChange ? "#fff" : "#023047"}`,
+                    color: `${colorChange ? "#fff" : "#202020"}`,
                     textDecoration: "none",
                   }}
                 >
@@ -189,7 +189,7 @@ function Navbar() {
                   sx={{
                     fontFamily: "monospace",
                     fontWeight: 800,
-                    color: "#8ecae6",
+                    color: "#fff",
                     textDecoration: "none",
                   }}
                 >
