@@ -3,11 +3,27 @@ import { FaFacebookF } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
 import { MdOutlineLocationOn } from "react-icons/md";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import toast from "react-hot-toast";
 const Contact = () => {
+  const form = useRef();
+  const handleContactFrom=(e)=>{
+    e.preventDefault();
+    emailjs.sendForm('service_ni5shsm', 'template_la4qm4p', form.current, 'QvhlkepP_8T0hWpF6')
+      .then((result) => {
+        if(result){
+          toast.success('Your email send successfully')
+        }
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
   return (
     <div>
-      <div className="grid md:grid-cols-3 pb-32">
-        <div className="text-white">
+      <div className="lg:grid grid-cols-3">
+        <div className="text-white pl-8 md:pl-12 lg:pl-0">
           <h3 className="uppercase text-lg font-semibold">Contact Info</h3>
           <div className="flex gap-6 items-center mt-8 ">
             <div className="w-20 h-20 bg-gradient-to-r from-[#2A2A2A] to-[#151515] flex items-center justify-center text-3xl rounded-lg">
@@ -53,14 +69,14 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="p-8 md:p-12 bg-gradient-to-r from-[#202020] to-[#151515] col-span-2 rounded-3xl">
+        <div className="p-8 md:p-12 bg-gradient-to-r mt-8 lg-mt-0 from-[#202020] to-[#151515] col-span-2 rounded-3xl">
           <h2 className="text-5xl font-bold text-white">
             Let&apos;s work <span className="text-[#E6B31e]">together.</span>
           </h2>
-          <form>
+          <form ref={form} onSubmit={handleContactFrom}>
             <input
               type="text"
-              name=""
+              name="user_name"
               placeholder="Name"
               required
               id=""
@@ -68,7 +84,7 @@ const Contact = () => {
             />
             <input
               type="email"
-              name=""
+              name="user_email"
               placeholder="Email"
               required
               id=""
@@ -78,12 +94,12 @@ const Contact = () => {
               type="text"
               placeholder="Your Subject"
               required
-              name=""
+              name="from_name"
               id=""
               className=" rounded-xl border-none h-14 mt-4 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] text-white px-5 w-full"
             />
             <textarea
-              name=""
+              name="message"
               id=""
               placeholder="Your Message"
               required

@@ -4,26 +4,26 @@ import { NavLink } from "react-router-dom";
 const About = () => {
   return (
     <div>
-      <div className="grid grid-cols-3 gap-10">
-        <div className="bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl">
-          <div className="p-8 w-full h-full">
+      <div className="md:grid grid-cols-3 md:gap-6 lg:gap-10">
+        <div className="bg-gradient-to-r w-full from-[#202020] to-[#151515] rounded-3xl">
+          <div className="p-8 md:p-5 lg:p-8 w-full h-full">
             <img src={user} alt="" className=" w-full h-full rounded-3xl" />
           </div>
         </div>
         <div className="col-span-2 ">
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center mt-8 md:mt-0 justify-center gap-2">
             <img
               src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
               alt=""
             />
-            <h2 className="text-7xl font-semibold text-white">SELF-SUMMARY</h2>
+            <h2 className="text-4xl lg:text-7xl font-semibold text-white">SELF-SUMMARY</h2>
             <img
               src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
               alt=""
             />
           </div>
           <div className="bg-gradient-to-r from-[#212121] mt-5 p-10 text-white rounded-3xl to-[#131313]">
-            <h2 className="text-5xl font-semibold pt-16">Sakib Al Hasan</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold pt-16">Sakib Al Hasan</h2>
             <p className="mt-4">
               I am a San francisco-based product designer with a focus on web
               design, illustration, a visual development. I have a diverse range
@@ -32,9 +32,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-5 text-white mt-5">
-        <div className="bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl p-8">
-          <h2 className="text-[#fff] mb-6 font-semibold text-lg">EXPERIENCE</h2>
+      <div className="md:grid grid-cols-2 gap-5 text-white mt-5">
+        <div className="bg-gradient-to-r mt-8 md:mt-0 from-[#202020] to-[#151515] rounded-3xl p-8">
+          <h2 className="text-[#fff] mb-6  font-semibold text-lg">EXPERIENCE</h2>
           <h5 className="text-[#595858] font-semibold text-lg">2007 - 2017</h5>
           <h4 className="text-[#fff] mb-1 mt-2 font-semibold text-lg">
             Framer Designer & Developer
@@ -43,8 +43,8 @@ const About = () => {
             Bluebase Designs
           </p>
         </div>
-        <div className="bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl p-8">
-          <h2 className="text-[#fff] mb-6 font-semibold text-lg">EDUCATION</h2>
+        <div className="bg-gradient-to-r mt-8 md:mt-0 from-[#202020] to-[#151515] rounded-3xl p-8">
+          <h2 className="text-[#fff] mb-6  font-semibold text-lg">EDUCATION</h2>
           <h5 className="text-[#595858] font-semibold text-lg">2007 - 2017</h5>
           <h4 className="text-[#fff] mb-1 mt-2 font-semibold text-lg">
             Bachelor Degree in Psychology
@@ -54,8 +54,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-4 mt-5 gap-5">
-        <div className="bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl p-8">
+      <div className="md:grid md:grid-cols-3 lg:grid-cols-4 mt-5 gap-5">
+        <div className="bg-gradient-to-r md:hidden lg:block from-[#202020] to-[#151515] rounded-3xl p-8">
           <div className="bg-gradient-to-r p-4 from-[#202020] to-[#151515] rounded-3xl border border-[#393939]">
             <div className="flex justify-center text-white  gap-4 items-center">
               <button className="w-20 border border-[#4a4a4a] h-20 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] rounded-full hover:text-black hover:bg-gradient-to-r hover:from-[#fff] hover:to-[#1A1A1A] flex items-center justify-center text-3xl">
@@ -98,7 +98,9 @@ const About = () => {
             </button>
           </div>
         </div>
-        <NavLink to={"/contact"} className="col-span-2 bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl px-8 pb-8">
+        <div className="col-span-2 mt-8 md:mt-0 bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl px-8 pb-8">
+
+        <NavLink to={"/contact"} className="">
           <img
             src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
             alt=""
@@ -135,9 +137,12 @@ const About = () => {
             </span>
           </span>
         </NavLink>
+        </div>
+        <div className="bg-gradient-to-r mt-8 md:mt-0 from-[#202020] to-[#151515] rounded-3xl p-8">
+
         <NavLink
           to={"/credentials"}
-          className="bg-gradient-to-r from-[#202020] to-[#151515] rounded-3xl p-8"
+          className=""
         >
           <img
             src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png"
@@ -176,6 +181,7 @@ const About = () => {
             </span>
           </div>
         </NavLink>
+        </div>
       </div>
     </div>
   );
