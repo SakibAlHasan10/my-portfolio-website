@@ -6,6 +6,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import toast from "react-hot-toast";
+import { NavLink } from "react-router-dom";
 const Contact = () => {
   const form = useRef();
   const handleContactFrom=(e)=>{
@@ -21,7 +22,7 @@ const Contact = () => {
       });
   }
   return (
-    <div>
+    <div className="pb-24">
       <div className="lg:grid grid-cols-3">
         <div className="text-white pl-8 md:pl-12 lg:pl-0">
           <h3 className="uppercase text-lg font-semibold">Contact Info</h3>
@@ -59,12 +60,17 @@ const Contact = () => {
           <div className="mt-12">
             <h2 className="uppercase text-lg font-semibold">Social info</h2>
             <div className="flex mt-8 justify-start gap-6 items-center">
+              <NavLink to={"https://www.facebook.com/msu.sakib.1"}>
               <button className="w-20 h-20 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] rounded-full hover:text-black hover:bg-gradient-to-r hover:from-[#fff] hover:to-[#1A1A1A] flex items-center justify-center text-3xl">
                 <FaFacebookF />
               </button>
+              </NavLink>
+              <NavLink>
+
               <button className="w-20 h-20 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] rounded-full hover:text-black hover:bg-gradient-to-r hover:from-[#fff] hover:to-[#1A1A1A] flex items-center justify-center text-3xl">
                 <FaLinkedinIn />
               </button>
+              </NavLink>
               <div></div>
             </div>
           </div>

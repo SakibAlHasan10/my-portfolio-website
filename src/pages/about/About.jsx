@@ -3,7 +3,7 @@ import user from "../../assets/sakib-al-hasan-10.jpg";
 import { NavLink } from "react-router-dom";
 const About = () => {
   return (
-    <div>
+    <div className="pb-16">
       <div className="md:grid grid-cols-3 md:gap-6 lg:gap-10">
         <div className="bg-gradient-to-r w-full from-[#202020] to-[#151515] rounded-3xl">
           <div className="p-8 md:p-5 lg:p-8 w-full h-full">
@@ -25,9 +25,7 @@ const About = () => {
           <div className="bg-gradient-to-r from-[#212121] mt-5 p-10 text-white rounded-3xl to-[#131313]">
             <h2 className="text-4xl md:text-5xl font-semibold pt-16">Sakib Al Hasan</h2>
             <p className="mt-4">
-              I am a San francisco-based product designer with a focus on web
-              design, illustration, a visual development. I have a diverse range
-              of experience having worked across various fields and industries.
+            I help you build a brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book. Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry&apos;s standard dummy text ever since an unknown printer took a galley.
             </p>
           </div>
         </div>
@@ -35,22 +33,22 @@ const About = () => {
       <div className="md:grid grid-cols-2 gap-5 text-white mt-5">
         <div className="bg-gradient-to-r mt-8 md:mt-0 from-[#202020] to-[#151515] rounded-3xl p-8">
           <h2 className="text-[#fff] mb-6  font-semibold text-lg">EXPERIENCE</h2>
-          <h5 className="text-[#595858] font-semibold text-lg">2007 - 2017</h5>
+          <h5 className="text-[#595858] font-semibold text-lg">2022 - 2023 </h5>
           <h4 className="text-[#fff] mb-1 mt-2 font-semibold text-lg">
-            Framer Designer & Developer
+          Frontend Web Developer
           </h4>
           <p className="text-[#595858] font-semibold text-md">
-            Bluebase Designs
+          Abc Company
           </p>
         </div>
         <div className="bg-gradient-to-r mt-8 md:mt-0 from-[#202020] to-[#151515] rounded-3xl p-8">
           <h2 className="text-[#fff] mb-6  font-semibold text-lg">EDUCATION</h2>
-          <h5 className="text-[#595858] font-semibold text-lg">2007 - 2017</h5>
+          <h5 className="text-[#595858] font-semibold text-lg">2021 - Current</h5>
           <h4 className="text-[#fff] mb-1 mt-2 font-semibold text-lg">
-            Bachelor Degree in Psychology
+            Bachelor Degree  in Political Science
           </h4>
           <p className="text-[#595858] font-semibold text-md">
-            Bluebase Designs
+          Govt. Tolaram University College
           </p>
         </div>
       </div>
@@ -58,9 +56,12 @@ const About = () => {
         <div className="bg-gradient-to-r md:hidden lg:block from-[#202020] to-[#151515] rounded-3xl p-8">
           <div className="bg-gradient-to-r p-4 from-[#202020] to-[#151515] rounded-3xl border border-[#393939]">
             <div className="flex justify-center text-white  gap-4 items-center">
+              <NavLink to={"https://www.facebook.com/msu.sakib.1"}>
+
               <button className="w-20 border border-[#4a4a4a] h-20 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] rounded-full hover:text-black hover:bg-gradient-to-r hover:from-[#fff] hover:to-[#1A1A1A] flex items-center justify-center text-3xl">
                 <FaFacebookF />
               </button>
+              </NavLink>
               <button className="w-20 border border-[#4a4a4a] h-20 bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] rounded-full hover:text-black hover:bg-gradient-to-r hover:from-[#fff] hover:to-[#1A1A1A] flex items-center justify-center text-3xl">
                 <FaLinkedinIn />
               </button>

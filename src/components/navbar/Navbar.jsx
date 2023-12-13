@@ -48,8 +48,8 @@ const pages = (
     >
       Portfolio
     </NavLink>
-    {/* <NavLink
-      to={`/news`}
+    <NavLink
+      to={`/credentials`}
       className={({ isActive, isPending }) =>
         isActive
           ? "active text-[#E6B31e] border-b-2 border-[#E6B31e] pb-1"
@@ -58,8 +58,8 @@ const pages = (
           : ""
       }
     >
-      News
-    </NavLink> */}
+      Resume
+    </NavLink>
     <NavLink
       to={`/contact`}
       className={({ isActive, isPending }) =>
@@ -193,7 +193,7 @@ function Navbar() {
                     textDecoration: "none",
                   }}
                 >
-                  Sakib Al Hasan
+                  Sakib
                 </Typography>
               </Grid>
             </Grid>
