@@ -18,7 +18,7 @@ const Root = () => {
       <div className="coursre">
         <div></div>
       </div>
-    </div>
+      </div>
   );
 };
 
