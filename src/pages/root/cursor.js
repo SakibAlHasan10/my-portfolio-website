@@ -1,5 +1,7 @@
-const coursoreTag = document.querySelector("div.coursre")
-const ball = coursoreTag.querySelector("div")
+import Root from "./Root";
+console.log(Root, "hhhhh")
+const cursorTag = document.querySelector("div.cursor")
+const ball = cursorTag.querySelector("div")
 
 let currentTx = 0;
 let currentTy = 0;
@@ -19,8 +21,8 @@ animate()
 document.addEventListener("mousemove", function(event){
     aimX=event.pageX;
     aimY = event.pageY;
-    // ball.style.left = event.pageX + "px";
-    // ball.style.top = event.pageY + "px"
+    ball.style.left = event.pageX + "px";
+    ball.style.top = event.pageY + "px"
 })
 
-export default animate
+// export default animate
