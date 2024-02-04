@@ -14,7 +14,7 @@ const Root = () => {
       <Outlet />
       </div>
       </Container>
-      <div className="coursre">
+      <div className="cursor">
         <div></div>
       </div>
       </div>
